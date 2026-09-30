@@ -72,9 +72,6 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# pyenv
-.python-version
-
 # celery beat schedule file
 celerybeat-schedule
 
@@ -102,3 +99,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Generated map output (written to the working directory)
+mapper.txt
+setter.txt

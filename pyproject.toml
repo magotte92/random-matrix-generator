@@ -1,0 +1,21 @@
+[project]
+name = "random-matrix-generator"
+version = "0.1.0"
+description = "A random matrix generator for dynamically building maps in Unity."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{ name = "humble-goat" }]
+dependencies = []
+
+[dependency-groups]
+dev = ["ruff==0.16.9"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+
+[tool.ruff.lint]
+# Syntax and pyflakes only. Style rules would rewrite the generator
+# without changing behavior, so they stay off.
+select = ["E9", "F"]
